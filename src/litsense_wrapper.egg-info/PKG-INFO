@@ -1,0 +1,48 @@
+Metadata-Version: 2.4
+Name: litsense-wrapper
+Version: 0.1.0
+Summary: Lightweight Python wrapper for the NCBI LitSense2 API
+Author-email: Your Name <you@example.com>
+License: MIT
+Project-URL: Homepage, https://www.ncbi.nlm.nih.gov/research/litsense2/
+Project-URL: Repository, https://github.com/your/repo
+Keywords: litsense,ncbi,biomedical,nlp,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.28.0
+Dynamic: license-file
+
+### litsense-wrapper
+
+Lightweight Python wrapper for the NCBI LitSense2 API.
+
+#### Installation
+
+```bash
+pip install litsense-wrapper
+```
+
+#### Usage
+
+```python
+from litsense_wrapper import LitSense_API
+
+engine = LitSense_API()
+results = engine.retrieve(query_str='COVID-19 mechanism', limit=2)
+
+for result in results:
+    print(result.text)
+```
+
+#### Notes
+- Modes supported: `passages` (default) and `sentences`.
+- Optional `min_score` filters results client-side.
+
+#### License
+MIT
+

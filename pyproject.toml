@@ -1,0 +1,33 @@
+[project]
+name = "litsense-wrapper"
+version = "0.1.0"
+description = "Lightweight Python wrapper for the NCBI LitSense2 API"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+keywords = ["litsense", "ncbi", "biomedical", "nlp", "api"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://www.ncbi.nlm.nih.gov/research/litsense2/"
+Repository = "https://github.com/your/repo"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["litsense_wrapper"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
