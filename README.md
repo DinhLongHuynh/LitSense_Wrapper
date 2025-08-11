@@ -1,4 +1,4 @@
-### litsense-wrapper
+### LiSsense-Wrapper
 
 Python wrapper for the NCBI LitSense2 API. LitSense2 (an update of LitSense) is a NCBI/NLM system for sentence- and paragraph-level semantic search across PubMed abstracts and the PMC Open Access subset, returning the most relevant sentences or passages for a query. It is useful for rapid evidence attribution, biocuration, and comparing new findings with existing literature. Learn more on the [NCBI LitSense2 page](https://www.ncbi.nlm.nih.gov/research/litsense2/).
 
